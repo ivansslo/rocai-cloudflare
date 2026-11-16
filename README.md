@@ -1,6 +1,8 @@
-# hermes-cloudflare
+# rocai-cloudflare
 
-Cloudflare Browser Rendering plugin for [hermes-agent](https://github.com/NousResearch/hermes-agent) — crawl, scrape, and extract content from web pages using Cloudflare's headless browser API.
+Cloudflare Browser Rendering plugin — crawl, scrape, and extract content from web pages using Cloudflare's headless browser API.
+
+Fork of [raulvidis/hermes-cloudflare](https://github.com/raulvidis/hermes-cloudflare), rebranded and maintained by [ivansslo](https://github.com/ivansslo) for the RocAI ecosystem. Compatible with hermes-agent v0.3.0+.
 
 ## Tools
 
@@ -20,15 +22,15 @@ Cloudflare Browser Rendering plugin for [hermes-agent](https://github.com/NousRe
 ### Quick install (hermes-agent v0.3.0+)
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/raulvidis/hermes-cloudflare/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/ivansslo/rocai-cloudflare/main/install.sh | bash
 ```
 
 ### Manual install
 
 ```bash
-git clone https://github.com/raulvidis/hermes-cloudflare.git
+git clone https://github.com/ivansslo/rocai-cloudflare.git
 mkdir -p ~/.hermes/plugins
-cp -r hermes-cloudflare/hermes-cloudflare-plugin ~/.hermes/plugins/hermes-cloudflare
+cp -r rocai-cloudflare/rocai-cloudflare-plugin ~/.hermes/plugins/rocai-cloudflare
 pip install httpx
 ```
 
@@ -49,7 +51,7 @@ export CLOUDFLARE_ACCOUNT_ID="your-account-id"
 
 ## Usage examples
 
-Once installed, hermes-agent can use the tools directly:
+Once installed, the agent can use the tools directly:
 
 **Crawl a website:**
 > Crawl https://docs.example.com and return the content as Markdown
@@ -68,11 +70,11 @@ Once installed, hermes-agent can use the tools directly:
 
 ## Requirements
 
-- hermes-agent v0.3.0+
+- hermes-agent v0.3.0+ (or compatible agent runtime)
 - Python 3.10+
 - `httpx` (installed automatically by install.sh)
 - Cloudflare account with Browser Rendering enabled (available on Free and Paid plans)
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE). Original work © raulvidis; fork © ivansslo.

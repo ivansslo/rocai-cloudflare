@@ -1,7 +1,7 @@
-name: hermes-cloudflare
+name: rocai-cloudflare
 version: 1.0.0
-description: "Cloudflare Browser Rendering API - crawl, scrape, extract markdown/JSON/links/screenshots/PDFs from web pages"
-author: raulvidis
+description: "Cloudflare Browser Rendering API - crawl, scrape, extract markdown/JSON/links/screenshots/PDFs from web pages (RocAI fork of raulvidis/hermes-cloudflare)"
+author: ivansslo
 requires_env:
   - CLOUDFLARE_API_TOKEN
   - CLOUDFLARE_ACCOUNT_ID
