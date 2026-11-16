@@ -88,7 +88,7 @@ def _api_url(endpoint: str) -> str:
     account_id = os.environ.get("CLOUDFLARE_ACCOUNT_ID")
     if not account_id:
         raise ValueError("CLOUDFLARE_ACCOUNT_ID environment variable is not set")
-    return f"{_BASE}/{account_id}/browser-rendering/{endpoint}"
+    return f"{_BASE}/{account_id}/browser-run/{endpoint}"
 
 
 def _headers() -> dict:
